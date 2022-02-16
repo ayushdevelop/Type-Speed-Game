@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6ed103e854.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--popup-->
+
+    <div class="popup">
+      <i class="far fa-times-circle cross"></i>
+      <div id="content">
+        <div id="img"></div>
+        <div id="info"></div>
+      </div>
+      <button id="playagain">Play Again</button>
+    </div>
+
+    <!--metrics-->
+    <header>
+      <div class="scores">
+        <div class="box">
+          <div id="words"></div>
+          <p>words/minute</p>
+        </div>
+        <div class="box">
+          <div id="characters"></div>
+          <p>characters/minute</p>
+        </div>
+        <div class="box">
+          <div id="time"></div>
+          <p>seconds</p>
+        </div>
+      </div>
+
+      <h1>TYPE SPEED TEST</h1>
+    </header>
+    <!--display of words-->
+    <main>
+      <div class="container"><p class="paragraph"></p></div>
+
+      <!--input fields-->
+
+      <form class="aform">
+        <input type="text" class="text" />
+      </form>
+    </main>
+
+    <footer>
+      <h4>If you get an empty container press SPACE KEY</h4>
+    </footer>
+
+    <script src="copy.js"></script>
+  </body>
+</html>

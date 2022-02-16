@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #555;
+}
+
+footer h4 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #555;
+  margin-top: 60px;
+}
+
+.container {
+  width: 500px;
+  margin: 60px auto;
+  box-shadow: 0 0 30px darkgray;
+  text-align: center;
+  padding: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color: #555;
+  font-weight: 600;
+}
+
+form {
+  width: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100px;
+  padding: 0.5rem;
+  border-width: 0 0 2px 0;
+  border-color: gray;
+  outline: none;
+  font-size: 1.5rem;
+  color: dodgerblue;
+  text-align: center;
+}
+
+input:focus {
+}
+
+.correct {
+  color: dodgerblue;
+}
+
+.incorrect {
+  text-decoration: line-through;
+}
+
+.scores {
+  width: 600px;
+  height: 100px;
+  margin: 40px auto 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #eee;
+  font-weight: 600;
+  color: gray;
+  flex-shrink: 1;
+}
+.box {
+  padding: 1rem;
+  border-radius: 10px;
+  border: solid 3px dodgerblue;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.popup {
+  display: none;
+  width: 400px;
+  height: 300px;
+  left: 35%;
+  position: absolute;
+  top: 140px;
+  z-index: 1;
+  padding: 10px;
+  background: #eee;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px dodgerblue;
+}
+.cross {
+  align-self: flex-end;
+}
+
+#content {
+  width: 75%;
+  height: 75%;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 3;
+}
+
+#img {
+  width: 60%;
+  height: 60%;
+  background: ;
+}
+
+#info {
+  width: 50%;
+  height: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #111;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+#info span {
+  font-weight: 900;
+  color: dodgerblue;
+}
+
+#playagain {
+  padding: 0.5rem;
+  background: dodgerblue;
+  color: #fff;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/*adding responsiveness*/
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    color: #555;
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 250px;
+    margin: 40px auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 120px;
+  }
+
+  .scores {
+    width: 50vw;
+    height: 40vh;
+    margin: 30px auto 50px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #eee;
+    font-weight: 600;
+    color: #333;
+  }
+  .box {
+    padding: 0.8rem 1rem;
+  }
+
+  .popup {
+    display: none;
+    width: 90vw;
+    height: 40vh;
+    left: 15px;
+    right: 5px;
+  }
+
+  #content {
+    width: 65%;
+    height: 65%;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #info {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}
